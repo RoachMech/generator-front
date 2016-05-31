@@ -1,0 +1,26 @@
+{
+  "name": "<%- appName %>",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "install": {
+    "path": {
+      "css": "public_html/src/css",
+      "js": "public_html/src/js",
+      "img": "public_html/images/src",
+      "scss": "assets/scss/src"
+    },
+    "ignore": [
+    ]
+  },
+  "description": "",
+  "main": "",
+  "homepage": ""
+}
