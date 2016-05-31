@@ -16,4 +16,7 @@ var FrontGenerator = yeoman.Base.extend({
 
 });
 
+require('./src/prompts.js')(FrontGenerator);
+require('./src/scaffold.js')(FrontGenerator);
+
 module.exports = FrontGenerator;
