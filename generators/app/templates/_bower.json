@@ -1,5 +1,5 @@
 {
-  "name": "<%- appName %>",
+  "name": "<%- props.appName %>",
   "version": "0.0.0",
   "ignore": [
     "**/.*",
@@ -9,6 +9,11 @@
     "tests"
   ],
   "dependencies": {
+    <% if (props.dependencies.jQuery) { -%>
+      "jQuery": "~2.2.4",
+    <% } if (props.dependencies.bourbon) { -%>
+      "bourbon": "~4.2.7",
+    <% } -%>
   },
   "install": {
     "path": {

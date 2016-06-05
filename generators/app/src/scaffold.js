@@ -12,7 +12,7 @@ module.exports = function (FrontGenerator) {
     };
 
     FrontGenerator.prototype.install = function install() {
-        this.installDependencies();
+        // this.installDependencies();
     };
 
 };

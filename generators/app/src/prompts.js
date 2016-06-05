@@ -3,18 +3,15 @@
 var _ = require('lodash');
 var chalk = require('chalk');
 
+var prompts = require('../prompts.json');
+
 module.exports = function (FrontGenerator) {
 
-    FrontGenerator.prototype.prompts = function prompts() {
+    FrontGenerator.prototype.askQuestions = function askQuestions() {
         var done = this.async();
 
-        var prompts = [{
-            name: 'appName',
-            message: 'What is your app\'s name ?'
-        }];
-
         this.prompt(prompts, function (props) {
-            this.appName = props.appName;
+            this.props = props;
 
             done();
         }.bind(this));

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "appName",
+    "message": "What is the name of your app?"
+  },
+  {
+    "type": "checkbox",
+    "name": "dependencies",
+    "message": "What packages would you like to use?",
+    "choices": [
+      {
+        "value": {
+          "key": "jquery"
+        },
+        "name": "jQuery"
+      },
+      {
+        "value": {
+          "key": "bourbon"
+        },
+        "name": "Bourbon"
+      }
+    ]
+  }
+]
