@@ -5,18 +5,20 @@
   },
   {
     "type": "checkbox",
-    "name": "dependencies",
+    "name": "bowerDependencies",
     "message": "What packages would you like to use?",
     "choices": [
       {
         "value": {
-          "key": "jquery"
+          "name": "jquery",
+          "version": "~2.2.4"
         },
         "name": "jQuery"
       },
       {
         "value": {
-          "key": "bourbon"
+          "name": "bourbon",
+          "version": "~4.2.7"
         },
         "name": "Bourbon"
       }

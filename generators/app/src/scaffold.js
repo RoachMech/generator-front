@@ -11,8 +11,4 @@ module.exports = function (FrontGenerator) {
         this.bulkCopy('.gitignore', '.gitignore');
     };
 
-    FrontGenerator.prototype.install = function install() {
-        // this.installDependencies();
-    };
-
 };
