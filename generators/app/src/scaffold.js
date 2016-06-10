@@ -9,6 +9,7 @@ module.exports = function (FrontGenerator) {
         this.bulkDirectory('assets', 'assets');
         this.bulkDirectory('gulp', 'gulp');
         this.copy('public_html/_index.html', 'public_html/index.html');
+        this.copy('_gulpfile.json', 'gulpfile.json');
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
         this.bulkCopy('.gitignore', '.gitignore');
