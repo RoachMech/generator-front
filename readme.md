@@ -12,7 +12,7 @@ A Yeoman generator for scaffolding a nice frontend structure for your project wi
 
 ## Installation
 
-#### Install depencies 
+#### Install dependencies 
 This generator requires `yeoman`, `bower` and `gulp`
 
 ```
