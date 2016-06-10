@@ -19,6 +19,7 @@ module.exports = function (FrontGenerator) {
      */
     FrontGenerator.prototype.install = function install() {
         this.bowerInstall(this.bowerComponents, {'--save': true});
+        this.npmInstall();
     };
 
 };
