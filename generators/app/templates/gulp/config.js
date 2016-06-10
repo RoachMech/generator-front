@@ -41,9 +41,9 @@ module.exports = {
     },
 
     browsersync: {
-        port: 3000,
+        port: 6333,
         enabled: true,
-        proxyUrl: 'http://dev.local/' + dirname + '/public_html/',
+        showNotifications: false,
         watchPaths: [
             'public_html/**/*.html'
         ]

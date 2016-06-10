@@ -4,8 +4,9 @@ var gulp = require('gulp'),
 
 gulp.task('serve', function () {
     browserSync.init({
-        proxy: config.browsersync.proxyUrl,
-        port: config.browsersync.port
+        server: './public_html',
+        port: config.browsersync.port,
+        notify: config.browsersync.showNotifications
     });
 });
 
