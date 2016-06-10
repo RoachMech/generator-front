@@ -5,23 +5,46 @@
   },
   {
     "type": "checkbox",
-    "name": "bowerDependencies",
-    "message": "What packages would you like to use?",
+    "name": "bowerComponents",
+    "message": "Which Bower components would you like me to install for you?",
     "choices": [
       {
         "value": {
-          "name": "jquery",
-          "version": "~2.2.4"
+          "name": "jquery"
         },
         "name": "jQuery"
       },
       {
         "value": {
-          "name": "bourbon",
-          "version": "~4.2.7"
+          "name": "bourbon"
         },
         "name": "Bourbon"
+      },
+      {
+        "value": {
+          "name": "neat"
+        },
+        "name": "Neat"
+      },
+      {
+        "value": {
+          "name": "susy"
+        },
+        "name": "Susy"
+      },
+      {
+        "value": {
+          "name": "foundation-sites"
+        },
+        "name": "Foundation"
+      },
+      {
+        "value": {
+          "name": "bootstrap-sass"
+        },
+        "name": "Bootstrap"
       }
+
     ]
   }
 ]

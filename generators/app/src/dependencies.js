@@ -2,18 +2,23 @@
 
 module.exports = function (FrontGenerator) {
 
-    FrontGenerator.prototype.prepareBowerDependencies = function prepareBowerDependencies() {
-        this.bowerDependencies = {};
+    /**
+     * Make a list of bower components to install
+     */
+    FrontGenerator.prototype.prepareBowerComponents = function prepareBowerComponents() {
+        this.bowerComponents = [];
 
-        this.props.bowerDependencies.forEach(function (dependency) {
-            this[dependency.name] = dependency.version;
-        }, this.bowerDependencies);
+        this.props.bowerComponents.forEach(function (component) {
+            this.push(component.name);
+        }, this.bowerComponents);
 
-        this.dependencyList = JSON.stringify(this.bowerDependencies, null, 2);
     };
 
+    /**
+     * Install node modules and bower components
+     */
     FrontGenerator.prototype.install = function install() {
-        // this.installDependencies();
+        this.bowerInstall(this.bowerComponents, {'--save': true});
     };
 
 };

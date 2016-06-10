@@ -2,6 +2,9 @@
 
 module.exports = function (FrontGenerator) {
 
+    /**
+     * Write files
+     */
     FrontGenerator.prototype.scaffold = function scaffold() {
         this.bulkDirectory('assets', 'assets');
         this.bulkDirectory('gulp', 'gulp');

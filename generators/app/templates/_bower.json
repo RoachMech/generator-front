@@ -8,7 +8,8 @@
     "test",
     "tests"
   ],
-  "dependencies": <%- dependencyList %>,
+  "dependencies": {
+  },
   "install": {
     "path": {
       "css": "public_html/src/css",
