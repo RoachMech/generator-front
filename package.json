@@ -13,6 +13,6 @@
     "yeoman-generator": "^0.21.2",
     "yosay": "^1.1.1"
   },
-  "repository": "RoachMech/generator-test",
+  "repository": "RoachMech/generator-perfect-frontend",
   "license": "MIT"
 }
