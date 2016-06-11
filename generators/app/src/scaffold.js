@@ -12,7 +12,7 @@ module.exports = function (FrontGenerator) {
         this.copy('_gulpfile.js', 'gulpfile.js');
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
-        this.bulkCopy('.gitignore', '.gitignore');
+        this.bulkCopy('_.gitignore', '.gitignore');
     };
 
 };
