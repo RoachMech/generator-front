@@ -1,5 +1,5 @@
 {
-  "name": "generator-front",
+  "name": "generator-gulp-front",
   "version": "0.1.0",
   "description": "Scaffold a perfect frontend structure for your next big project",
   "files": [
