@@ -15,7 +15,7 @@ module.exports = function (FrontGenerator) {
     };
 
     /**
-     * Install node modules and bower components
+     * Install bower components and node modules
      */
     FrontGenerator.prototype.install = function install() {
         this.bowerInstall(this.bowerComponents, {'--save': true});
